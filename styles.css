@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+    font-size: 20px;
+}
+
+.left h4{
+    font-family: epilogue;
+    font-size: 20px;
+    color: #2B2B2B;
+}
+.right h4{
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: epilogue;
+    columns: #1E1D1D;
+}
+
+#main{
+    
+     padding: 100px;
+     font-family: epilogue;
+}
+.part1{
+   
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+ gap: 30px;
+
+}
+.text h2{
+    color: #2D2D2D;
+    font-size: 30px;
+    margin-bottom: 1vw;
+}
+.text p{
+    font-size: 20px;
+    line-height: 1.2;
+    color: #0C0C0C;
+    margin-top: 1vw;
+}
+.text h1{
+ font-size: 6.2vw;
+ font-family: epilogue;
+ line-height: 1.4;
+ color: #2D2D2D;
+ font-weight: 600;
+}
+
+video{
+    height: 30vw; 
+}
+.logos{
+    margin: 80px 0;
+    border-bottom: 1px solid #2B2B2B;
+    border-top: 1px solid #2B2B2B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+}
+.logos img{
+    height: 3vw;
+}
+.designcontainer{
+    margin-top: 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.design img{
+ height: 9vw;
+}
+.design{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 3vw;
+   
+}
+.design h2{
+    font-size: 2vw;
+    margin-top: 3vw;
+    color: #2D2D2D;
+}
+.design p{
+    font-size: 18px;
+    line-height: 1.3;
+    width: 90%;
+    text-align: center;
+}
+@media (max-width:500px) and (min-width:300px) {
+
+    nav{
+        display: flex;
+        justify-content: space-between;  
+        align-items: center;
+        width: 100%;
+    }
+    .right{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+   ;
+    gap: 5px;
+}
+.right h4{
+     font-size: 12px;
+}
+.left h4{
+    font-size: 15px;
+}
+#main{
+    padding: 50px;
+}
+
+
+
+.part1{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: center;
+}
+.text h2{  
+    font-size: 18px;
+    margin-bottom: 1vw;
+}
+.text p{
+   
+    margin-top: 1vw;
+}
+.text h1{
+    margin: 20px 0;
+ font-size: 30px;
+ font-family: epilogue;
+ line-height: 1.2;
+ font-weight: 600;
+}
+
+.designcontainer{
+    flex-wrap: wrap;
+}
+.design img{
+    height: 100px;
+}
+.logos{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0;
+}
+.logos img{
+    height: 20px;
+}
+}
+
+
+
+/*https://portfolio-testing-steel.vercel.app/*/
