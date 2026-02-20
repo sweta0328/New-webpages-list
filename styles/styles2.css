@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    padding: 1.5vw 7vw;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+}
+.navleft img{
+    height: 60px;
+}
+.navmiddle{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 30px;
+
+}
+.navmiddle h4{
+    font-family: orbitron;
+
+}
+
+.middleSection{
+    font-weight: 500;
+    font-size: 18px;
+}
+.home{
+    font-size: 22px;
+    font-weight: 800;
+    text-decoration: underline;
+    margin-top: -3px;
+}
+.navright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.navright i{
+  font-size: 30px;
+  font-weight: 300;
+}
+.search{
+    font-size: 20px;
+    padding:0.8rem 3rem;
+    border: 2px solid black;
+    background-color:white;
+    border-radius: 8px;
+    font-family: Helvetica, sans-serif;
+    cursor: pointer;
+}
+.search:hover{
+    background-color: rgb(245, 245, 245);
+    transition: 0.2s ease-in-out;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.left{
+    width: 40%;
+    position: relative;
+  
+}
+.image{
+    height:88%;
+}
+
+.square{
+    position: absolute;
+    height: 70%;
+    z-index: -1;
+    right: 13%;
+    bottom: -1%;
+}
+.right{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    position: relative;
+}
+.upperimg{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 20px;
+    
+}
+.upperimg .star{
+    display: flex;
+    margin-right: 10%;
+    left: 100px;
+    height: 90px;
+}
+.upperimg .globe{
+    display: flex;
+    margin-left: 25%;
+    padding-left: 40px;
+    height: 90px;
+}
+.right h1{
+    font-size: 7vh;
+    font-family: orbitron;
+}
+.right h3{
+    font-size: 19px;
+    font-weight: 300;
+    font-family: poppins;
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+    width: 65%;
+}
+.buttons{
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+}
+.email{
+    font-size: 18px;
+    font-family: orbitron;
+    padding: 8px 30px;
+    border-radius: 8px;
+    border: 2px solid black;
+
+}
+.join{
+    font-size: 18px;
+    font-family: orbitron;
+    padding: 8px 30px;
+    border-radius: 8px;  
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    text-transform: uppercase;
+}
+.contact{
+    font-size: 20px;
+    font-family: poppins;
+    margin: 20px;
+    font-weight: 300;
+}
+.images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.laststar{
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+}
+.laststar img{
+    height: 58px;
+}
+
+/*https://github.com/ShubhamVsCode/MyPortfolio*/
+/*https://github.com/ShubhamVsCode/Project-1-Trends-in-2025/tree/main/assets*/
