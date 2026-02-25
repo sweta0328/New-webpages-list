@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    font-family: "Allerta";
+    background-color: #f4f3f8;
+    overflow: hidden;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem 4rem;
+ 
+}
+nav h4{
+    font-weight: 200;
+    font-size: 19px;
+}
+nav .middle{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: 5rem; 
+    font-size: 18px;
+}
+.right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+}
+.middle h4:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    text-underline-offset: 6px;
+}
+.right img{
+    cursor: pointer;
+}
+.discover {
+    background: #466d50;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    color: white;
+    font-family: "Allerta";
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: fit-content;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+
+}
+
+li h1{
+    font-size: 8.5rem;
+}
+li p{
+    font-size: 20px;
+      color: rgb(49, 49, 49);
+}
+.images{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.div1, .div2, .div3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    gap: 1rem;
+}
+.images p{
+    font-size: 13px;
+    width: 80%;
+    color: gray;
+   
+}
+.content{
+   margin-left: 10rem;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+@media (max-width:500px) {
+    body{
+        overflow: hidden;
+        width:100%;
+    }
+    .middle h4{
+        display: none;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        gap: 50%;
+    }
+    .right{
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 0;
+    }
+
+    .description{
+        width: fit-content;
+        overflow: hidden;
+    }
+    
+    li h1{
+        font-size: 4.5rem;
+    }
+    li p{
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+    }
+    .big_img{
+        width: 50%;
+        height: 50%;
+        padding: 2rem;
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .discover{
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    .images{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 4rem;
+    }
+    .div1, .div2, .div3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    gap: 2rem;
+}
+.images h4{
+    font-size: 20px;
+}
+}

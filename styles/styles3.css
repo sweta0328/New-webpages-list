@@ -7,12 +7,12 @@ body{
     height: 100%;
     width: 100%;
     background-image: url(../assets2/bg.png);
-    overflow: hidden;
+    overflow-x: hidden;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Poppins";
-   
 }
+
 .nav{
     background-color: black;
     display: flex;
@@ -67,7 +67,6 @@ ul li{
     display: flex;
     justify-content: center;
     align-items: center;
-
     padding-top: 10rem;
     
 }
@@ -86,21 +85,47 @@ ul li{
     font-size: 24px;
     margin-top: 1rem;
 }
-/*@media (max-width: 600px) and(min-width:300px) {
+@media (max-width: 600px) and(min-width:300px) {
     .content h1{
-        font-size: 2rem;
+        font-size: 1rem;
         width:80%;
+        padding-top: 4rem;
     }
     .content{
         display: flex;
         justify-content: center;
         align-items: center;
     }
+    body{
+        background-size: cover;
+        background-position: center;
+    }
     .nav{
         width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
     }
-    .nav .left .middle{
+    .nav .middle{
         display: none;
     }
 }
-    */
+@media (max-width:900px) and (min-width:620px) {
+    .content h1{
+        font-size: 3rem;
+        padding-top: 6rem;
+    }
+    .request_button{
+        font-size: 20px;
+        padding: 0.5rem 1rem;
+    }
+    body{
+        height: 100vh;
+        background-color: lightgreen;
+        background-size: cover;
+        background-position: center;
+    }
+}
+    
