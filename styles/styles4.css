@@ -8,7 +8,7 @@ body{
     width: 100%;
     font-family: "Allerta";
     background-color: #f4f3f8;
-    overflow: hidden;
+
 }
 nav{
     display: flex;
@@ -34,6 +34,9 @@ nav .middle{
     align-items: center;
     flex-direction: row;
     gap: 2rem;
+}
+.right i{
+    display: none;
 }
 .middle h4:hover{
     text-decoration: underline;
@@ -62,7 +65,7 @@ nav .middle{
 }
 
 li h1{
-    font-size: 8.5rem;
+    font-size: 7rem;
 }
 li p{
     font-size: 20px;
@@ -97,9 +100,10 @@ li p{
     justify-content: space-between;
     padding-top: 1rem;
 }
-@media (max-width:500px) {
+
+@media (max-width:768px) {
     body{
-        overflow: hidden;
+        
         width:100%;
     }
     .middle h4{
@@ -108,14 +112,18 @@ li p{
     nav{
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content:space-around;
         width: 100%;
-        gap: 50%;
+       
     }
     .right{
         display: flex;
         justify-content: flex-end;
         padding-right: 0;
+    }
+    .right i{
+        display: block;
+        font-size: larger;
     }
 
     .description{
@@ -124,23 +132,29 @@ li p{
     }
     
     li h1{
-        font-size: 4.5rem;
+        font-size: 3rem;
     }
     li p{
         margin-bottom: 20px;
         font-size: 18px;
+       
     }
     .container{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: flex-start;
         width: 100%;
         
     }
     .big_img{
-        width: 50%;
-        height: 50%;
-        padding: 2rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .big_img img{
+        width: 60%;
+        height:auto;
     }
     .content{
         display: flex;
@@ -169,4 +183,23 @@ li p{
 .images h4{
     font-size: 20px;
 }
+}
+@media (max-width:1024px) and (min-width: 768px) {
+    .container{
+        width: 100%;
+    }
+  
+    li h1{
+        font-size: 5rem;
+    }
+    .big_img {
+        width: 80%;
+    }
+    .big_img img{
+        width: fit-content;
+    }
+    .middle{
+        gap: 1rem;
+    }
+    
 }
