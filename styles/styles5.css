@@ -139,11 +139,11 @@ h4{
     color: #183B56;
 }
 .left-hero p{
-    font-size: 1.25rem;
     font-family: "Roboto";
     color: #577592;
-    line-height: 1.4;
+    line-height: 1.5;
     padding-bottom: 1.2rem;
+    font-size: 20px;
 
 }
 .right-hero{
@@ -164,7 +164,9 @@ h4{
 }
 .companies-section p{
     color:#183B56;
-    font-weight: 600;
+    font-weight: 700;
+    font-family: "Poppins";
+    font-size: 16px;
 }
 .companies-logo{
     display: flex;
@@ -211,7 +213,12 @@ h4{
     margin-bottom: 1.5em;
     padding: 10px;
 }
-
+.features h2{
+    font-weight: 600;
+}
+.features p{
+    font-size: 20px;
+}
 .fields-section{
     display: flex;
     align-items: center;
@@ -258,13 +265,13 @@ h4{
     gap: 20px;
     text-align: bottom;
 }
-.examples-bottom p{
+.examples-bottom h3{
     color: white;
     font-size: 24px;
     font-weight: 600;
     font-family: "Poppins";
-    bottom: 10px;
-    padding: 10px;    
+    padding: 10px;   
+    align-self: baseline;
 }
 .card1{
     width: 23%;
@@ -276,22 +283,25 @@ h4{
 }
 
 .card2{
-    width: 20%;
+    width: 23%;
     background:linear-gradient(rgb(0,0,0,0.5), rgb(0,0,0,0.9)), url(../pictures/asset\ 34.jpeg);
     background-size: cover;   
     min-height: 300px;
+    position: relative;
 }
 .card3{
-    width: 20%;
+    width: 23%;
     background: linear-gradient(rgb(0,0,0,0.5), rgb(0,0,0,0.8)), url(../pictures/asset\ 36.jpeg);
     background-size: cover;
     min-height: 300px;
+    position: relative;
 }
 .card4{
-    width: 20%;
+    width: 23%;
     background: linear-gradient(rgb(0,0,0,0.5), rgb(0,0,0,0.8)), url(../pictures/asset\ 36.jpeg);
     background-size: cover;
     min-height: 300px;
+    position: relative;
 }
 
 .explore-section{
@@ -321,6 +331,7 @@ h4{
     justify-content: space-around;
     gap: 3rem;
     padding: 5rem 0;
+    align-items: start;
 }
 .footer-section img{
     height: 35px;
@@ -330,9 +341,13 @@ h4{
 .footer-section h4{
     font-weight: 400;
     cursor: pointer;
+    font-size: 16px;
 }
 .footer-section h4:hover{
     color: #1d69a3;
+}
+.footer-section span{
+    font-weight: 700;
 }
 .footer-left, .footer-middle, .footer-right{
     display: flex;
@@ -344,20 +359,21 @@ h4{
 .sub-footer{
     background-color: #b9cde4;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items:center;
     flex-wrap: wrap;
-    padding: 0 3rem;
+    padding: 0.5rem 3rem;
 }
 .sub-footer h4{
     color:#183B56;
     padding: 1rem;
     font-weight: 400;
+    font-size: 16px;
 }
 .sub-footer i{
-    font-size: 25px;
     color:#183B56;
-    padding: 0 1.5rem;
+    font-size: 20px;
+    padding:0 1rem;
 }
 
 
@@ -369,15 +385,7 @@ h4{
     display: initial;
     font-size: 25px;
 }
-.hero-section{
-    flex-direction: column-reverse;
-}
-.left-hero, .right-hero{
-    width: 100%;
-}
-.right-hero img{
-    width: 90%;
-}
+
 .companies-logo{
     flex-wrap: wrap;
 }
@@ -460,15 +468,24 @@ h4{
 }
 .left-hero{
     width: 80%;
+    align-items: center;
 }
+
 .left-hero h1{
     font-size: 2rem;
+    text-align: center;
+}
+.left-hero p{
+    text-align: center;
 }
 .right-hero img{
     width: 90%;
 }
 .companies-logo{
     flex-wrap: wrap;
+}
+.companies-section{
+    width: 100%;
 }
 .companies-section p{
     text-align: center;
@@ -535,7 +552,27 @@ h4{
 @media (max-width:550px) and (min-width: 200px) {
     .features{
     width: 100%;
-
+}
+.hero-section{
+    flex-direction: column-reverse;
+}
+.left-hero, .right-hero{
+    width: 100%;
+}
+.left-hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right-hero img{
+    width: 90%;
+}
+.left-hero h1{
+    font-size: 2rem;
+    text-align: center;
+}
+.left-hero p{
+    text-align: center;
 }
 .companies-section p{
     text-align: center;
