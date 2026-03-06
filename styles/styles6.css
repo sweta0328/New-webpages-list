@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins";
+}
+.container{
+    margin: auto;
+    padding:1rem;
+}
+nav{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin:2rem;
+}
+.middle{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+a{
+    text-decoration: none;
+    color: black;   
+}
+a:hover{
+    color: #fe5e35;
+    cursor: pointer;
+}
+.main{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5rem;
+    padding-top: 0;
+}
+.main-left{
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+h3{
+    font-size: 3rem;
+}
+h1{
+    font-size: 5rem;
+}
+h5{
+    font-size: 1.5rem;
+}
+.main-right{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.features{
+    align-content: center;
+    padding-left: 5rem;
+    margin: 5rem;
+}
+.features img{
+    background-color: #fe5e35;
+    border-radius: 50%;
+    padding: 2px;
+}
+p{
+    width: 80%;
+    color: #a5a5a5;
+}
+.active-btns{
+    margin-top: 5rem;
+}
+.buttons{
+    color: #fff;
+    background-color: #fe5e35;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    margin: 1rem;
+    font-family: "Poppins";
+    font-size: 1rem;
+}
+.buttons:hover{
+    background-color: #f3491f;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.bubble-container{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row;
+}
+.bubbles{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+}
+.main-right{
+    position: relative;
+}
+.discount{
+    position: absolute;
+    bottom: 15%;
+    left: -10%;
+    background-repeat: no-repeat;
+}
+.discount-img{
+    position: relative;
+}
+.discount-text{
+    position: absolute;
+    top:30%;
+    bottom: 25%;
+    left:25%;
+    right: 25%;
+    text-align: center;
+    align-self: center;
+    color: white;
+}
+@media (max-width:1200px) and (min-width:768px) {
+    .main{
+        flex-wrap: wrap-reverse;
+    }
+    h3{
+    font-size: 1.5rem;
+}
+h1{
+    font-size: 3rem;
+}
+h5{
+    font-size: 1rem;
+}
+}
+
+@media (max-width:768px) and (min-width:550px) {
+    .main{
+        flex-wrap: wrap-reverse;
+    }
+    .main-left{
+        width: 100%;
+    }
+    .main-right{
+        width: 100%;
+    }
+       .middle{
+        display: none;
+    }
+    .container{
+        width: 100%;
+    }
+    .main-right .headphone{
+        height: 450px;
+        overflow: hidden;
+    }
+    h3{
+    font-size: 1.5rem;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    h5{
+        font-size: 1rem;
+    }
+    .features{
+    align-content: center;
+    padding-left: 1rem;
+    margin: 2rem;
+    }
+    p{
+        width: 100%;  
+    }
+    .circle{
+        height: 30px;
+    }
+    .plus{
+        height: 20px;
+    }
+    .active-btns{
+        margin-top: 2rem;
+    }
+    .discount .discount-img{
+        height: 120px;
+    }
+        .main-right{
+    position: relative;
+    }
+    .discount{
+        position: absolute;
+        bottom: 20%;
+        left: 0;
+        background-repeat: no-repeat;
+    }
+}
+@media (max-width:550px) and (min-width:280px) {
+    .main{
+        flex-wrap: wrap-reverse;
+        align-content: center;
+        padding: 1rem;
+        width: 100%;
+    }
+    .middle{
+        display: none;
+    }
+    .container{
+        width: 100%;
+    }
+    .main-left{
+        width: 100%;
+    }
+    .main-right{
+        width: 100%;
+    }
+    .main-right .headphone{
+        height: 350px;
+        overflow: hidden;
+    }
+    h3{
+    font-size: 1.5rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h5{
+        font-size: 1rem;
+    }
+    .features{
+    align-content: center;
+    padding-left: 1rem;
+    margin: 2rem;
+    }
+    p{
+        width: 100%;  
+    }
+    .circle{
+        height: 30px;
+    }
+    .plus{
+        height: 20px;
+    }
+    .active-btns{
+        margin-top: 2rem;
+    }
+    .discount .discount-img{
+        height: 80px;
+    }
+    .active-btns{
+       text-align: center;
+    }
+    .main-right{
+    position: relative;
+}
+.discount{
+    position: absolute;
+    bottom: 20%;
+    left: -5%;
+    background-repeat: no-repeat;
+}
+.discount-text h5{
+    font-size: 12px;
+    text-align: center;
+}
+nav{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin:10px;
+}
+.left img{
+    height: 30px;
+}
+.right img{
+    height: 30px;
+}
+
+}
