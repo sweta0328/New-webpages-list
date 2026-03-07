@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    font-family: "Roboto";
+    background: url(./web7images/backcover.svg);
+    background-repeat: no-repeat !important;
+    background-position:right!important;
+    background-size:fit-content;
+    max-width: 1200px;
+ 
+}
+nav{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 3rem 5rem;
+
+}
+.middle{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    gap: 3rem;
+}
+a{
+    text-decoration: none;
+    color:#3e4794;
+    font-weight: 600;
+}
+.sign-in{
+    color: white;
+    background: linear-gradient(to right, #9960f2, #ff8adc);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+.intro-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 3rem;
+    width: 40%;
+}
+
+
+.left-section h1 {
+  font-size: 6rem;
+  color: #3e4794;
+  margin-bottom: 2rem;
+}
+.learn-more-btn{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem 1.5rem;
+    border-radius:5rem;
+}
+h4{
+    color: #484848;
+    width: 90%;
+    margin-bottom: 3rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.intro{
+    height: 80vh;
+}
+.imgs-div{
+    height: 100%;
+    position: relative;
+    width: 60%;
+}
+.vector-dot {
+  position: absolute;
+  bottom: 14rem;
+  left: 4rem;
+}
+.vector-img {
+  position: absolute;
+  bottom: 8.5rem;
+  left: 0.5rem;
+}
+@media (max-width:1200px) and (min-width: 768px) {
+     body{
+    background: url(./web7images/backcover.svg);
+    background-repeat: no-repeat !important;
+    background-position:top right !important;
+    width: 100%;
+    background-size: 600px;
+    }
+    nav .middle{
+     
+    }
+    nav{
+        padding: 2rem;
+    }
+  
+    .imgs-div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .intro{
+    height: 60vh;
+    }
+
+    .vector-dot {
+    position: absolute;
+    bottom: 11rem;
+    left: 7.5rem;
+    }
+    .vector-img {
+    position: absolute;
+    bottom: 5.5rem;
+    left: 4rem;
+    }
+    .left-section h1 {
+    font-size: 3rem;
+    }
+    .learn-more-btn{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.6rem 1rem;
+
+}
+}
+@media (max-width: 768px) and (min-width: 550px) {
+    body{
+    background: url(./web7images/backcover.svg);
+    background-repeat: no-repeat !important;
+    background-position:top right !important;
+    width: 100%;
+    background-size: 550px;
+    }
+    .intro{
+    height: 50vh;
+    }
+    nav .middle{
+        display: none;
+    }
+    nav{
+        padding: 2rem;
+    }
+    .intro-section{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .imgs-div{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .left-section{
+        width: 100%;
+        padding: 3rem;
+    }
+    .intro{
+    height: 60vh;
+    }
+
+    .vector-dot {
+    position: absolute;
+    bottom: 11rem;
+    left: 7.5rem;
+    }
+    .vector-img {
+    position: absolute;
+    bottom: 5.5rem;
+    left: 4rem;
+    }
+    .left-section h1 {
+    font-size: 4rem;
+    }
+    .learn-more-btn{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.6rem 1rem;
+
+}
+}
+@media (min-width: 280px) and (max-width: 550px) {
+    body{
+    background: url(./web7images/backcover.svg);
+    background-repeat: no-repeat !important;
+    background-position:top right !important;
+    width: 100%;
+    background-size: 400px;
+    }
+    nav .middle{
+        display: none;
+    }
+    nav{
+        padding: 2rem;
+    }
+    nav .logo{
+        height: 30px;
+    }
+    .intro-section{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .imgs-div{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .left-section{
+        width: 100%;
+        padding: 1.5rem;
+    }
+    .intro{
+    height: 45vh;
+    }
+
+    .vector-dot {
+    position: absolute;
+    bottom: 8rem;
+    left: 6.5rem;
+    }
+    .vector-img {
+        height: 90px;
+    position: absolute;
+    bottom: 4rem;
+    left: 4rem;
+    }
+    .left-section h1 {
+    font-size: 3rem;
+    }
+    .learn-more-btn{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.6rem 1rem;
+
+}
+}
